@@ -40,7 +40,7 @@
 					$url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$zipcode."&sensor=false&key=AIzaSyDSrw_1-p0jP2VhAPnp6udFfnVFiFJSKug";
 					$url1 = "https://maps.googleapis.com/maps/api/geocode/json?address=".$zipcode1."&sensor=false&key=AIzaSyDSrw_1-p0jP2VhAPnp6udFfnVFiFJSKug";
 					$details=file_get_contents($url);
-					echo $details1=file_get_contents($url1);
+					$details1=file_get_contents($url1);
 					$result = json_decode($details,true);
 					$result1 = json_decode($details1,true);
 				
